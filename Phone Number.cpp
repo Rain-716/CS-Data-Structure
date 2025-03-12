@@ -4,7 +4,8 @@
 #include <algorithm>
 #include <iomanip>
 using namespace std;
-struct a{
+struct a
+{
     int number=0;
     int times=0;
 };
