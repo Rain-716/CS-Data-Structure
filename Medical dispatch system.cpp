@@ -68,7 +68,7 @@ void Queue::enqueueFront(int citizen)
     Node* temp=new Node(citizen);
     temp->next=front;
     front=temp;
-    if (front->next==nullptr){
+    if (!(front->next)){
         rear=front;
     }
 }
@@ -106,7 +106,7 @@ void Queue::remove(int citizen)
         return;
     }
     Node* temp=front;
-    while (temp->next!=nullptr){
+    while (temp->next){
         if (temp->next->citizen!=citizen){
             temp=temp->next;
             continue;
